@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+AUTHOR: Buddika Gunawardena (BSG92)
+
 #shopt -s nullglob
 
 export wallpaper_path
