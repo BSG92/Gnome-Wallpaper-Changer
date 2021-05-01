@@ -1,0 +1,11 @@
+[Unit]
+Description=Changes Gnome Wallpaper
+#Wants=WallChanger.timer
+
+[Service]
+Type=oneshot
+User=buddika
+ExecStart=/home/buddika/WallpaperChanger/wall_changer.sh
+
+[Install]
+WantedBy=multi-user.target

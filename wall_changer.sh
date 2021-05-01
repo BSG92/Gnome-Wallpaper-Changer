@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-AUTHOR: Buddika Gunawardena (BSG92)
+# AUTHOR: Buddika Gunawardena (BSG92)
 
 #shopt -s nullglob
 
