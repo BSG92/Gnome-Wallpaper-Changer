@@ -9,7 +9,6 @@ export wallpaper_types
 export index
 export conf_file=$(pwd)/settings.conf
 
-echo $conf_file
 while IFS= read -r line
 	do
 		if [[ $line =~ ^wallpaper_path ]]; 
@@ -38,7 +37,7 @@ while [ $index -lt $wallpapers_size ]
 			break
 		else
 			# handling white spaces using double quotes ""
-			dbus-launch gsettings set org.gnome.desktop.background picture-uri "${wallpaper_types[$index]}"
+			gsettings set org.gnome.desktop.background picture-uri "${wallpaper_types[$index]}"
 			index=$(($index+1))
 			$(sed -i 's/current_index\=.*/current_index='$index'/' "$conf_file")
 			break
@@ -50,6 +49,6 @@ while [ $index -lt $wallpapers_size ]
 #echo $wallpapers_size
 #echo "printing line from file"
 #echo $wallpaper_path
-echo "index is $index"
+#echo "index is $index"
 ######### END OF DEBUGGING ##########
 
