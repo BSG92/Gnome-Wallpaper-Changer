@@ -1,1 +1,4 @@
-./GNOME-wallpaper-changer-access-token
+### MORE ON gitignore ###
+# https://www.freecodecamp.org/news/gitignore-what-is-it-and-how-to-add-to-repo/
+
+/GNOME-wallpaper-changer-access-token
